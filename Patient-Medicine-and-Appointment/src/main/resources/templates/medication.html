@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Management</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Medication Management</h1>
+        <ul id="medication-list">   
+        </ul>
+     <form id="medication-form">
+            <div class="mb-3">
+                <label for="medication-name" class="form-label">Medication Name</label>
+                <input type="text" class="form-control" id="medication-name" name="medication-name" required>
+            </div>
+            <div class="mb-3">
+                <label for="medication-dosage" class="form-label">Dosage</label>
+                <input type="text" class="form-control" id="medication-dosage" name="medication-dosage" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Medication</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

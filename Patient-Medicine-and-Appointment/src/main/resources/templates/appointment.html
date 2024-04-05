@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule Appointment</h1>
+        <form id="appointment-form" action="/appointments" method="post">
+            <div class="mb-3">
+                <label for="appointment-date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="appointment-date" name="appointment-date" required>
+            </div>
+            <div class="mb-3">
+                <label for="appointment-time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="appointment-time" name="appointment-time" required>
+            </div>
+            <div class="mb-3">
+                <label for="doctor" class="form-label">Doctor</label>
+                <select class="form-select" id="doctor" name="doctor" required>
+                    <option value="">Select Doctor</option>
+                    <option value="1">Dr. Muthu</option>
+                    <option value="2">Dr. Sasi</option>
+                    <option value="3">Dr. Dinesh</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="patient-id" class="form-label">Patient ID</label>
+                <input type="text" class="form-control" id="patient-id" name="patient-id" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Schedule Appointment</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
